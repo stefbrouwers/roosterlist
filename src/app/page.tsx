@@ -6,28 +6,21 @@ import { useState } from "react";
 export default function HomePage() {
   const [filter, setfilter] = useState("");
   const debouncedFilter = useDebounce(filter, 300);
-
+  const rooms_1 = [
+    "GR-101%20(K)",
+    "GR-102%20(K)",
+    "GR-103%20(K)",
+    "GR-104%20(K)",
+    "GR-105%20(K)",
+    "GR-106%20(K)",
+    "GR-107%20(K)",
+    "GR-108%20(K)",
+    "GR-109%20(K)",
+    "GR-110%20(K)",
+    "GR-111%20(K)",
+  ];
   const rooms0 = [
     "GR-001",
-    "GR-002",
-    "GR-003",
-    "GR-004",
-    "GR-005",
-    "GR-006",
-    "GR-007",
-    "GR-008",
-    "GR-009",
-    "GR-010",
-    "GR-011",
-    "GR-012",
-    "GR-013",
-    "GR-014",
-    "GR-015",
-    "GR-016",
-    "GR-017",
-    "GR-018",
-    "GR-019",
-    "GR-020",
   ];
   const rooms1 = [
     "GR-101",
@@ -86,14 +79,6 @@ export default function HomePage() {
     "GR-310",
     "GR-311",
     "GR-312",
-    "GR-313",
-    "GR-314",
-    "GR-315",
-    "GR-316",
-    "GR-317",
-    "GR-318",
-    "GR-319",
-    "GR-320",
   ];
   const rooms4 = [
     "GR-401",
@@ -140,6 +125,7 @@ export default function HomePage() {
     "GR-520",
   ];
   const rooms = [
+    ...rooms_1,
     ...rooms0,
     ...rooms1,
     ...rooms2,
@@ -152,7 +138,6 @@ export default function HomePage() {
     <main className="flex min-h-screen items-center justify-center bg-gray-100">
       <div className="w-full max-w-2xl rounded-lg bg-white p-4 shadow-md">
         <input
-          type="number"
           onChange={(event) => setfilter(event.target.value)}
           className="mb-2 w-full rounded-lg border border-gray-300 p-2"
         />
