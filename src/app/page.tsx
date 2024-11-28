@@ -152,6 +152,7 @@ export default function HomePage() {
     <main className="flex min-h-screen items-center justify-center bg-gray-100">
       <div className="w-full max-w-2xl rounded-lg bg-white p-4 shadow-md">
         <input
+          type="number"
           onChange={(event) => setfilter(event.target.value)}
           className="mb-2 w-full rounded-lg border border-gray-300 p-2"
         />
