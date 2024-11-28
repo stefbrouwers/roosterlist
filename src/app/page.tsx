@@ -71,11 +71,74 @@ export default function HomePage() {
     "GR-217",
     "GR-218",
     "GR-219",
-    "GR-220", 
+    "GR-220",
   ];
-  const rooms3 = [""];
-  const rooms4 = [""];
-  const rooms5 = [""];
+  const rooms3 = [
+    "GR-301",
+    "GR-302",
+    "GR-303",
+    "GR-304",
+    "GR-305",
+    "GR-306",
+    "GR-307",
+    "GR-308",
+    "GR-309",
+    "GR-310",
+    "GR-311",
+    "GR-312",
+    "GR-313",
+    "GR-314",
+    "GR-315",
+    "GR-316",
+    "GR-317",
+    "GR-318",
+    "GR-319",
+    "GR-320",
+  ];
+  const rooms4 = [
+    "GR-401",
+    "GR-402",
+    "GR-403",
+    "GR-404",
+    "GR-405",
+    "GR-406",
+    "GR-407",
+    "GR-408",
+    "GR-409",
+    "GR-410",
+    "GR-411",
+    "GR-412",
+    "GR-413",
+    "GR-414",
+    "GR-415",
+    "GR-416",
+    "GR-417",
+    "GR-418",
+    "GR-419",
+    "GR-420",
+  ];
+  const rooms5 = [
+    "GR-501",
+    "GR-502",
+    "GR-503",
+    "GR-504",
+    "GR-505",
+    "GR-506",
+    "GR-507",
+    "GR-508",
+    "GR-509",
+    "GR-510",
+    "GR-511",
+    "GR-512",
+    "GR-513",
+    "GR-514",
+    "GR-515",
+    "GR-516",
+    "GR-517",
+    "GR-518",
+    "GR-519",
+    "GR-520",
+  ];
   const rooms = [
     ...rooms0,
     ...rooms1,
@@ -90,7 +153,7 @@ export default function HomePage() {
       <div className="w-full max-w-2xl rounded-lg bg-white p-4 shadow-md">
         <input
           onChange={(event) => setfilter(event.target.value)}
-          className="w-full rounded-lg border border-gray-300 p-2 mb-2"
+          className="mb-2 w-full rounded-lg border border-gray-300 p-2"
         />
         <ul className="space-y-2">
           {rooms
